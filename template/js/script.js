@@ -143,6 +143,7 @@ $(document).ready(function () {
 			$("#addresserror").html('');
 		}
 	});
+	/***** Search Participant ****/
 	$('#searchParticipantData').click(function(){
 		var name = $("#searchname").val();
 		var locality = $("#searchlocality").val();
@@ -158,7 +159,7 @@ $(document).ready(function () {
 	});
 });
 
-		
+/***** Delete Participant ****/		
 function deleteParticipantData(participantId){
 	$.ajax({
 		url: base_url+"event/participantDelete",
